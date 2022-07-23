@@ -6833,22 +6833,6 @@
     (pin "6" (uuid 460379c0-fe71-43f0-8a96-2548e21809ce))
   )
 
-  (symbol (lib_id "HPS:VCC") (at 384.81 63.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 3e0965fc-b789-493a-9f51-412a16a88e23)
-    (property "Reference" "#PWR019" (id 0) (at 384.81 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VCC" (id 1) (at 384.81 58.42 0))
-    (property "Footprint" "" (id 2) (at 384.81 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 384.81 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 82049e76-89b4-426d-bf70-f8aa68d04fde))
-  )
-
   (symbol (lib_id "HPS:R_0805_10K") (at 226.06 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 3f6b52c8-c9a8-4dfd-9e17-b18085e83d47)
@@ -7668,6 +7652,22 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2766e811-96ea-49ab-9f32-c550561b3044))
+  )
+
+  (symbol (lib_id "HPS:GND") (at 384.81 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 978809cd-641a-45f3-a18c-162b61bc0b0e)
+    (property "Reference" "#PWR0104" (id 0) (at 384.81 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 384.81 68.58 0))
+    (property "Footprint" "" (id 2) (at 384.81 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 384.81 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 61eb5d69-c635-4166-bc9e-86ae2d788b83))
   )
 
   (symbol (lib_id "HPS:PWR_FLAG") (at 60.96 114.3 0) (unit 1)
@@ -8658,9 +8658,6 @@
     (path "/ed7cc89e-9495-4e2f-a9ca-3563ebdd30e8"
       (reference "#PWR018") (unit 1) (value "GND") (footprint "")
     )
-    (path "/3e0965fc-b789-493a-9f51-412a16a88e23"
-      (reference "#PWR019") (unit 1) (value "VCC") (footprint "")
-    )
     (path "/b3c36c95-a911-4edf-8a71-e8a00d2f2ff7"
       (reference "#PWR020") (unit 1) (value "VCC") (footprint "")
     )
@@ -8717,6 +8714,9 @@
     )
     (path "/9d11912e-8f6a-4d97-b71f-7df980ea39c8"
       (reference "#PWR0103") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/978809cd-641a-45f3-a18c-162b61bc0b0e"
+      (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
     )
     (path "/b625a70b-6b01-4ec2-b81a-d2af7627ba00"
       (reference "BT1") (unit 1) (value "Battery_Cell") (footprint "footprints:BatteryHolder_Keystone_106_1x20mm")
